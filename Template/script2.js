@@ -24,7 +24,7 @@ function result() {
         answer = "Плохо";
     } else {
         if (mark < 3) {
-        answer = "Сойдет";
+        answer = "С";
         } else {
             if (mark <= 4) {
             answer = "Нормально";

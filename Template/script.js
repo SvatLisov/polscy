@@ -28,7 +28,7 @@ function mainFunс()
     let check = "";
 
     if (document.getElementById("checkbox").checked) {
-        check = "Ваш любимый вкус сока:" + document.querySelector('input[name="radio1"]:checked').value + "<br>";
+        check = "ХУЙ:" + document.querySelector('input[name="radio1"]:checked').value + "<br>";
     }
   
     document.getElementById('answer').innerHTML =  "Имя: " + name + "<br>"+ "Фамилия: " + surname + "<br>" + "Ваш любимый лимонад: " + drink + "<br>" + check + "<br>" + "Спасибо за участие!";
