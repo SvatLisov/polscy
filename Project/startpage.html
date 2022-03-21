@@ -3,21 +3,55 @@
 <html lang="ru">
 <head>
     <style>
-        
+    h1 {
+        font-size: 200%; /* Размер шрифта */
+        border-bottom: 2px solid maroon; /* Параметры линии под текстом */
+        font-weight: normal; /* Убираем жирное начертание */
+        padding-bottom: 5px; /* Расстояние от текста до линии */
+
+        padding-left: 20px;
+        background: url(petrsu2.png) no-repeat;
+        background-size: 20px 20px;
+        background-position: 0px 11px;
+    }
+    #centerLayer {
+        margin-left: 30%; /* Отступ слева */
+        margin-right: 30%; /* Отступ справа */ /* Цвет фона */
+        padding: 10px; /* Поля вокруг текста */
+    }
+    .my_button {
+        width: 150px;
+        height: 90px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0); 
+    }
+    
+
     </style>   
        
     <meta charset="utf-8"/>
     <title>Польские ссыльные</title>
-<body>
+<body style="background-image:url(bg1.jpg);">
     <h1>
         База данных польских ссыльных
     </h1>
 
-    <form action="mainpage.html" target="_blank">
-        <button>
+    <form action="mainpage.html" target="_blank" id="centerLayer">
+        <button class="my_button">
             Поиск
         </button>
     </form>
-    
+    <form action="registration.html" target="_blank" id="centerLayer">
+        <button class="my_button">
+            Авторизация
+        </button>
+    </form>
+    <div id="centerLayer">В данном разделе представлены документы о политической ссылке в Олонецкую губернию из окраинных губерний России с 1850-1870 года.</div>
+
+    <div id="centerLayer"> Основной контингент ссыльных составляли церковнослужители (ксендзы),
+         дворяне, бывшие офицеры Польской армии. Места водворения ссыльных - уездные города Олонецкой губернии.
+    </div>
 </body>
 </html>
