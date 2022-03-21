@@ -35,8 +35,8 @@
              
             <fieldset>
                 
-                <legend style="text-align: center; font-size: 175%; color: blue">Расскажите сначала о себе, а потом а своих лимонадах</legend>
-                <p style="text-align: center; font-size: 107%; color:red">Я обожаю лимонады и хочу узнать о Ваших предпочтениях, но для начала расскажите о себе</p>
+                
+                
 
                 <p><input type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="user" name="user" autocomplete="on" required autofocus></p>
 
@@ -44,69 +44,31 @@
 
                 <p><input type="text" placeholder="Отчество" pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="secname" name="secname" required></p>
 
-                <p><input type="text" placeholder="Coca-cola" pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="drink" name="drink" required></p>
+                <p><input type="text" placeholder="Звание" pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="rank" name="rank" required></p>
 
-                <p><input type="email" placeholder="COCACOLA@yandex.ru " id="email" name="email" required></p>
+                <p><input type="text" placeholder="Губерния" pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="province" name="province" required></p>
+
+                <p><input type="text" placeholder="Аттестация"  pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="attistation" name="attistation" required></p>
+
+                <p><select  multiple name="marital status">
+                    <option disabled>Семейное положение</option>
+                    <option value="Женат\Замужем">Женат\Замужем</option>
+                    <option value="Не женат\Не замужем">Не женат\Не замужем</option>
+                </select></p>
+
+                <p><select  multiple name="Content from the treasury">
+                    <option disabled>Содержание от казны</option>
+                    <option value="Да">Да</option>
+                    <option value="Нет">Нет</option>
+                </select></p>
+
+                <p><input type="text" placeholder="Чин"  pattern="[A-Za-zА-Яа-яЁё]{2,30}" id="Chin" name="Chin" required></p>
+
 
 
             </fieldset>
 
             
-            <fieldset>
-                <legend style="text-align: center; font-size: 110%; color:blue">Дата рождения чтобы знать</legend>
-                <p>Дата: <input type="date" id="date" required></p>
-            </fieldset>
-
             
-            <fieldset>
-                <legend style="text-align: center; font-size: 106%; color:blue">Вы можете посмотреть на самый лучший лимонад и изменить его размер</legend>
-               <input type="range" min="1" max="10" id="size" oninput="sizePic()" value="1">
-                <p><img height="150" width="150" src="cola.jpg" alt="" id="cola"></p>
-            </fieldset>
-
-            
-            <fieldset>
-                <legend style="text-align: center; font-size: 110%; color:blue">Каким цветом вывести информацию?</legend>
-                <p>Укажите цвет: <input type="color" id="color" value="#000000" oninput="onColorChanged()" ></p>
-            </fieldset>
-
-            <fieldset>
-                <legend style="text-align: center; font-size: 110%; color:blue"></legend>
-                <p>Если вы любите соки, укажите Ваш любимый вкус<input type="checkbox" id="checkbox1" oninput="onChecked('div1', 'checkbox1')" ></p>
-                <div class="box" id="div1">
-                    <fieldset>
-                        <p><input type="radio" name="radio1" value="Яблоко" checked> Яблоко</p>
-                        <p><input type="radio" name="radio1" value="Персик"> Персик</p>
-                        <p><input type="radio" name="radio1" value="Ананас"> Ананас</p>
-                        <p><input type="radio" name="radio1" value="Апельсин"> Апельсин</p>
-                        <p><input type="radio" name="radio1" value="Апельсин"> Томатный</p>
-                        <p><input type="radio" name="radio1" value="Апельсин"> Морковный</p>
-
-                    </fieldset>
-                </div>
-            </fieldset>
-        
-
-            
-            <fieldset>
-                <legend style="text-align: center; font-size: 110%; color:blue;" >Результаты опроса:</legend>
-                <div>
-                    <button type="submit" value="Поехали"> Поехали</button>
-                </div>
-            </fieldset>
-            
-            <fieldset>
-                <legend style="text-align: center; font-size: 110%; color:blue;" >Тест по лимонадам</legend>
-                <div>
-                    <button onclick="window.location.href = 'html.html'">Перейти</button>
-                </div>
-            </fieldset>
-        
-        <div id="win" class="window">
-            <p>
-              <a id="answer"></a>  
-            </p>
-        </div>
-    </form>
 </body>
 </html>
